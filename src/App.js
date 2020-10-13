@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { ContextStateProvider } from 'dynamic-context-provider'
 import './App.css';
-// import GeicoTemplate from './Components/GeicoTemplate';
-import { Home } from './pages/Home';
+import Home from './pages/Home';
 import Toaster from './Components/Toaster';
+import CoreDialog from './Components/CoreDialog';
 
 const emptyAccount = {
   name: 'Absalon Darnell Berrian',
@@ -18,14 +18,18 @@ const emptyAccount = {
   vin: '1FA6P8TH8H5307376',
   effectiveDate: '05-17-20',
   policyNumber: '6200-86-06-96/01388',
+  insurance: 'geico'
 }
 const globalStates = {
-  toaster: {}
+  toaster: {},
+  dialog: {title:'', style:{}, open: false, content: ()=>null},
 }
+
 function AppRouter() {  
   const [initialError, setinitialError] = useState(false)
   const [isloading, setisloading] = useState(true)
   const [accountInfo, setaccountInfo] = useState(emptyAccount)
+
   async function getAccountInfo(){
     let accountInfo = emptyAccount
     try{
@@ -35,6 +39,7 @@ function AppRouter() {
     }
     setisloading(false)
   }
+
   useEffect(() => {
     getAccountInfo()
   }, [])
@@ -46,8 +51,8 @@ function AppRouter() {
     <div>
        <ContextStateProvider stateConfig={{...accountInfo,...globalStates, }}>
          <Home />
-        {/* <GeicoTemplate /> */}
        <Toaster initialError={initialError}/>
+       <CoreDialog />
       </ContextStateProvider>
     </div>
   );

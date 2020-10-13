@@ -13,7 +13,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.3",
-    "react-to-pdf": "0.0.13"
+    "react-to-print": "^2.10.0"
   },
   "scripts": {
     "start": "react-scripts start",

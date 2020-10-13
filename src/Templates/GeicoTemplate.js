@@ -1,5 +1,5 @@
 import React from 'react'
-import geicoImage from '../static/background1.jpg';
+import geicoImage from '../static/geicoBackground.jpg';
 import { useContextState } from 'dynamic-context-provider'
 
 const GeicoTemplate = () => {
@@ -11,7 +11,7 @@ const GeicoTemplate = () => {
     const addressLine2 = `${city} ${state} ${zipcode}`
 
     return (
-        <div>
+        <div id="geicoInsurance">
             <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
             <style type="text/css" dangerouslySetInnerHTML={{ __html: "\n<!--\nspan.cls_004{font-family:Arial,serif;font-size:8.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}\ndiv.cls_004{font-family:Arial,serif;font-size:8.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}\nspan.cls_002{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}\ndiv.cls_002{font-family:Arial,serif;font-size:11.0px;color:rgb(0,0,0);font-weight:bold;font-style:italic;text-decoration: none}\nspan.cls_005{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\ndiv.cls_005{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\nspan.cls_006{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\ndiv.cls_006{font-family:Arial,serif;font-size:6.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\nspan.cls_007{font-family:Arial,serif;font-size:8.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\ndiv.cls_007{font-family:Arial,serif;font-size:8.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}\nspan.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}\ndiv.cls_008{font-family:Arial,serif;font-size:10.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}\nspan.cls_010{font-family:Times,serif;font-size:48.0px;color:rgb(169,169,169);font-weight:normal;font-style:normal;text-decoration: none}\ndiv.cls_010{font-family:Times,serif;font-size:48.0px;color:rgb(169,169,169);font-weight:normal;font-style:normal;text-decoration: none}\n-->\n" }} />
             <div style={{ position: 'absolute', left: '50%', marginLeft: '-306px', top: '75px', width: '612px', height: '792px', overflow: 'hidden' }}>
@@ -42,9 +42,9 @@ const GeicoTemplate = () => {
                 <div style={{ position: 'absolute', left: '104.40px', top: '100.00px' }} className="cls_004"><span className="cls_004">Model</span></div>
                 <div style={{ position: 'absolute', left: '170.40px', top: '100.00px' }} className="cls_004"><span className="cls_004">Vehicle ID No.</span></div>
                 <div style={{ position: 'absolute', left: '7.20px', top: '108.88px' }} className="cls_007"><span className="cls_007">{year}</span></div>
-                <div style={{ position: 'absolute', left: '44.40px', top: '108.88px' }} className="cls_007"><span className="cls_007">{make}</span></div>
-                <div style={{ position: 'absolute', left: '95.76px', top: '108.88px' }} className="cls_007"><span className="cls_007">{model}</span></div>
-                <div style={{ position: 'absolute', left: '159.36px', top: '108.88px' }} className="cls_007"><span className="cls_007">{vin}</span></div>
+                <div style={{ position: 'absolute', left: '44.40px', top: '108.88px' }} className="cls_007"><span className="cls_007">{make.toUpperCase()}</span></div>
+                <div style={{ position: 'absolute', left: '95.76px', top: '108.88px' }} className="cls_007"><span className="cls_007">{model.toUpperCase()}</span></div>
+                <div style={{ position: 'absolute', left: '159.36px', top: '108.88px' }} className="cls_007"><span className="cls_007">{vin.toUpperCase()}</span></div>
                 <div style={{ position: 'absolute', left: '281.52px', top: '105.68px' }} className="cls_005"><span className="cls_005">your insurance packet.</span></div>
                 <div style={{ position: 'absolute', left: '281.52px', top: '121.76px' }} className="cls_005"><span className="cls_005">Please notify us promptly of any change in your address to be</span></div>
                 <div style={{ position: 'absolute', left: '65.52px', top: '128.80px' }} className="cls_007"><span className="cls_007">Phone Number:</span><span className="cls_004">1-800-841-3000</span></div>
@@ -69,13 +69,13 @@ const GeicoTemplate = () => {
                 <div style={{ position: 'absolute', left: '102.96px', top: '260.56px' }} className="cls_004"><span className="cls_004">Model</span></div>
                 <div style={{ position: 'absolute', left: '170.16px', top: '260.56px' }} className="cls_004"><span className="cls_004">Vehicle ID No.</span></div>
                 <div style={{ position: 'absolute', left: '7.20px', top: '268.48px' }} className="cls_007"><span className="cls_007">{year}</span></div>
-                <div style={{ position: 'absolute', left: '43.92px', top: '268.48px' }} className="cls_007"><span className="cls_007">{make}</span></div>
-                <div style={{ position: 'absolute', left: '95.52px', top: '268.48px' }} className="cls_007"><span className="cls_007">{model}</span></div>
-                <div style={{ position: 'absolute', left: '158.88px', top: '268.48px' }} className="cls_007"><span className="cls_007">{vin}</span></div>
+                <div style={{ position: 'absolute', left: '43.92px', top: '268.48px' }} className="cls_007"><span className="cls_007">{make.toUpperCase()}</span></div>
+                <div style={{ position: 'absolute', left: '95.52px', top: '268.48px' }} className="cls_007"><span className="cls_007">{model.toUpperCase()}</span></div>
+                <div style={{ position: 'absolute', left: '158.88px', top: '268.48px' }} className="cls_007"><span className="cls_007">{vin.toUpperCase()}</span></div>
                 <div style={{ position: 'absolute', left: '330.24px', top: '274.88px' }} className="cls_005"><span className="cls_005">{name}</span></div>
                 <div style={{ position: 'absolute', left: '65.52px', top: '288.16px' }} className="cls_007"><span className="cls_007">Phone Number:</span><span className="cls_004">1-800-841-3000</span></div>
-                <div style={{ position: 'absolute', left: '330.24px', top: '286.40px' }} className="cls_005"><span className="cls_005">{addressLine1}</span></div>
-                <div style={{ position: 'absolute', left: '330.24px', top: '297.92px' }} className="cls_005"><span className="cls_005">{addressLine2}</span></div>
+                <div style={{ position: 'absolute', left: '330.24px', top: '286.40px' }} className="cls_005"><span className="cls_005">{addressLine1.toUpperCase()}</span></div>
+                <div style={{ position: 'absolute', left: '330.24px', top: '297.92px' }} className="cls_005"><span className="cls_005">{addressLine2.toUpperCase()}</span></div>
                 <div style={{ position: 'absolute', left: '39.12px', top: '306.88px' }} className="cls_007"><span className="cls_007">Not valid more than one year from effective date.</span></div>
                 <div style={{ position: 'absolute', left: '156.00px', top: '514.56px' }} className="cls_010"><span className="cls_010">VOID</span></div>
                 <div style={{ position: 'absolute', left: '411.60px', top: '514.56px' }} className="cls_010"><span className="cls_010">VOID</span></div>

@@ -1,21 +1,26 @@
 import React from 'react';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-import TextField from '@material-ui/core/TextField';
+import { Grid, Typography, TextField, InputLabel } from '@material-ui/core';
 import { useContextState } from 'dynamic-context-provider'
 
 export default function InsuranceForm() {
     const {
-        name,  street, aptBldgNum, city, state, zipcode,
+        name, street, aptBldgNum, city, state, zipcode,
         year, make, model, vin, effectiveDate,
         updateContextState,
+        insurance
     } = useContextState()
-    console.log('log: effectiveDate.slice(-2)', effectiveDate.slice(-2))
-    
-    const nextYear = effectiveDate.slice(-2) > 0 ? `20${(Number(effectiveDate.slice(-2)) +1)}` : '...'
-    function handleChange(type, value) {
 
-        updateContextState({ [type]: value })
+    const nextYear = effectiveDate.slice(-2) > 0 ? `20${(Number(effectiveDate.slice(-2)) + 1)}` : '...'
+    function handleChange(type, value) {
+        let updateState = { [type]: value }
+        if(type === 'insurance'){
+            const policyNumberMap = {
+                geico: '6200-86-06-96/03188',
+                progressive: 941842816
+            }
+            updateState.policyNumber = policyNumberMap[value]
+        }
+        updateContextState(updateState)
     }
     return (
         <React.Fragment>
@@ -23,6 +28,26 @@ export default function InsuranceForm() {
                 Personal Information
       </Typography>
             <Grid container spacing={3}>
+                <Grid item xs={12} sm={12}>
+                    <InputLabel id="insurance">Select desired insurance</InputLabel>
+                    <select
+                        style={{
+                            width: '100%',
+                            height: '40px',
+                            fontSize: '14pt',
+                            marginTop: '6px',
+                        }}
+                        id="insurance"
+                        value={insurance}
+                        onChange={e => handleChange('insurance', e.target.value)}
+                    >
+                        {
+                            ['geico', 'progressive'].map((insurance, i) => {
+                                return (<option key={i} value={insurance}>{insurance}</option>)
+                            })
+                        }
+                    </select>
+                </Grid>
                 <Grid item xs={12} sm={12}>
                     <TextField
                         required
@@ -97,8 +122,8 @@ export default function InsuranceForm() {
             <Typography style={{ marginTop: '20px', textAlign: 'center' }} variant="h6" gutterBottom>
                 Car Information
       </Typography>
-      <Grid container spacing={3}>
-      <Grid item xs={4} sm={4}>
+            <Grid container spacing={3}>
+                <Grid item xs={4} sm={4}>
                     <TextField
                         required
                         value={year}
@@ -156,9 +181,9 @@ export default function InsuranceForm() {
                     />
                 </Grid>
                 <Typography style={{ marginTop: '20px', textAlign: 'center' }} gutterBottom>
-                {`Good until ${nextYear}`}
-      </Typography>
-               
+                    {`Good until ${nextYear}`}
+                </Typography>
+
             </Grid>
         </React.Fragment>
     );
