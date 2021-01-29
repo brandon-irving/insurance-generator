@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f361e03.chunk.css",
-    "main.js": "/static/js/main.46d8a8b2.chunk.js",
-    "main.js.map": "/static/js/main.46d8a8b2.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a41ac6f2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a41ac6f2.js.map",
-    "static/js/2.7396d289.chunk.js": "/static/js/2.7396d289.chunk.js",
-    "static/js/2.7396d289.chunk.js.map": "/static/js/2.7396d289.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.be02f6a5fb8df2669148a06088995630.js": "/precache-manifest.be02f6a5fb8df2669148a06088995630.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.5f361e03.chunk.css.map": "/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.7396d289.chunk.js.LICENSE.txt": "/static/js/2.7396d289.chunk.js.LICENSE.txt",
-    "static/media/progressiveBackground.jpg": "/static/media/progressiveBackground.0286d2ef.jpg"
+    "main.css": "/insurance-generator/static/css/main.5f361e03.chunk.css",
+    "main.js": "/insurance-generator/static/js/main.eb6b6b21.chunk.js",
+    "main.js.map": "/insurance-generator/static/js/main.eb6b6b21.chunk.js.map",
+    "runtime-main.js": "/insurance-generator/static/js/runtime-main.b1a0f8e9.js",
+    "runtime-main.js.map": "/insurance-generator/static/js/runtime-main.b1a0f8e9.js.map",
+    "static/js/2.7396d289.chunk.js": "/insurance-generator/static/js/2.7396d289.chunk.js",
+    "static/js/2.7396d289.chunk.js.map": "/insurance-generator/static/js/2.7396d289.chunk.js.map",
+    "index.html": "/insurance-generator/index.html",
+    "precache-manifest.955b9037bfb3b2ec36257e69167f8239.js": "/insurance-generator/precache-manifest.955b9037bfb3b2ec36257e69167f8239.js",
+    "service-worker.js": "/insurance-generator/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/insurance-generator/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.7396d289.chunk.js.LICENSE.txt": "/insurance-generator/static/js/2.7396d289.chunk.js.LICENSE.txt",
+    "static/media/progressiveBackground.jpg": "/insurance-generator/static/media/progressiveBackground.0286d2ef.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a41ac6f2.js",
+    "static/js/runtime-main.b1a0f8e9.js",
     "static/js/2.7396d289.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.46d8a8b2.chunk.js"
+    "static/js/main.eb6b6b21.chunk.js"
   ]
 }
