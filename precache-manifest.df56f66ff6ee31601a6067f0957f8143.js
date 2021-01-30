@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "745219e1b0092eb82db0b283953b2bc9",
+    "revision": "2d66edc377a22459b46695ac36e38abc",
     "url": "/insurance-generator/index.html"
   },
   {
-    "revision": "15b20e3fb66df723f38e",
+    "revision": "54d6c8be62cd38b730f4",
     "url": "/insurance-generator/static/css/main.5f361e03.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/insurance-generator/static/js/2.7396d289.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15b20e3fb66df723f38e",
-    "url": "/insurance-generator/static/js/main.eb6b6b21.chunk.js"
+    "revision": "54d6c8be62cd38b730f4",
+    "url": "/insurance-generator/static/js/main.52cad629.chunk.js"
   },
   {
     "revision": "bcfccb9ae2a71bdb9099",
