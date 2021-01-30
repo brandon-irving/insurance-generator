@@ -6,18 +6,18 @@ import Toaster from './Components/Toaster';
 import CoreDialog from './Components/CoreDialog';
 
 const emptyAccount = {
-  name: 'Absalon Darnell Berrian',
-  street: '618 NW 13TH ST',
-  aptBldgNum: 'APT 27',  
-  city: 'BOCA RATON',
-  state: 'FL',
-  zipcode: 33486,
-  year: 2017,
+  name: '',
+  street: '123 NW 23TH ST',
+  aptBldgNum: 'APT 14',  
+  city: 'Townsville',
+  state: 'GA',
+  zipcode: 12344,
+  year: 2020,
   make: 'FORD',
   model: 'MUSTANG',
-  vin: '1FA6P8TH8H5307376',
+  vin: '4444P8TTHH5223333',
   effectiveDate: '05-17-20',
-  policyNumber: '6200-86-06-96/01388',
+  policyNumber: '6280-86-16-36/22288',
   insurance: 'geico'
 }
 const globalStates = {

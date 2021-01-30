@@ -59,7 +59,7 @@ const Home = () => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Insurance Generator
+            Insurance Generator (Educational Use Only)
               </Typography>
         </Toolbar>
       </AppBar>
